@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CreateSchedule from "./CreateSchedule";
-import ParticipateSchedule from "./ParticipateSchedule";
+import CreateSchedule from "./routes/CreateSchedule";
+import ParticipateSchedule from "./routes/ParticipateSchedule";
 
 function App() {
   return (
