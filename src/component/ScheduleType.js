@@ -1,9 +1,6 @@
 import style from "../routes/basic.module.css";
-import { useNavigate } from "react-router-dom";
 
 function ScheduleType() {
-  const navigate = useNavigate();
-
   return (
     <div className={style.container}>
       <div className={style.text}>일정의 종류를 선택해주세요.</div>
@@ -12,10 +9,7 @@ function ScheduleType() {
         <button className={style.inputType}>요일별</button>
       </div>
       {/* react-calendar library 사용 */}
-      <button className={style.nextButton}         
-      onClick ={() => { 
-          navigate("/participate"); 
-          }}>→</button>
+      <button className={style.nextButton}>→</button>
     </div>
   );
 }
