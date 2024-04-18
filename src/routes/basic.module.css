@@ -1,68 +1,68 @@
 body {
-    margin: 0;
-  }
-  
-  .container {
-    width: 100vw;
-    height: 100vh;
-    background-color: #bbcdbf;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-  }
-  
-  .text {
-    width: 800px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .inputName,
-  .inputOpen,
-  .inputType {
-    width: 450px;
-    background-color: #cbd9ce;
-    border: 1px solid white;
-    border-radius: 20px;
-  }
-  
-  .inputName {
-    font-size: 40px;
-  }
-  
-  .inputOpen {
-    font-size: 23px;
-    height: 80px;
-    font-weight: bold;
-  }
-  
-  .inputType {
-    width: 200px;
-    font-size: 25px;
-    height: 50px;
-    font-weight: bold;
-  }
-  
-  .nextButton {
-    width: 180px;
-    height: 60px;
-    color: white;
-    background-color: #679f79;
-    border-radius: 30px;
-    border: none;
-  }
-  
-  .openContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .typeContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bbcdbf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.text {
+  width: 800px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inputName,
+.inputOpen,
+.inputType {
+  width: 450px;
+  background-color: #cbd9ce;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.inputName {
+  font-size: 50px;
+}
+
+.inputOpen {
+  font-size: 23px;
+  height: 80px;
+  font-weight: bold;
+}
+
+.inputType {
+  width: 200px;
+  font-size: 25px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.nextButton {
+  width: 180px;
+  height: 60px;
+  color: white;
+  background-color: #679f79;
+  border-radius: 30px;
+  border: none;
+}
+
+.openContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.typeContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
