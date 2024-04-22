@@ -10,7 +10,42 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
+}
+
+.progressbar {
+  width: 500px;
+  height: 20px;
+  background-color: #cbd9ce;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+.step1 {
+  width: 33%;
+  height: 20px;
+  background-color: #43684f;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+}
+
+.step2 {
+  width: 66%;
+  height: 20px;
+  background-color: #43684f;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+}
+
+.step3 {
+  width: 100%;
+  height: 20px;
+  background-color: #43684f;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
 }
 
 .text {
@@ -30,7 +65,14 @@ body {
 }
 
 .inputName {
-  font-size: 50px;
+  height: 50px;
+  font-size: 35px;
+  padding: 5px;
+}
+
+.inputName:focus {
+  outline: none;
+  border: 2px solid #43684f;
 }
 
 .inputOpen {
@@ -39,11 +81,19 @@ body {
   font-weight: bold;
 }
 
+.inputOpen:focus {
+  border: 2px solid #43684f;
+}
+
 .inputType {
   width: 200px;
   font-size: 25px;
   height: 50px;
   font-weight: bold;
+}
+
+.inputType:focus {
+  border: 2px solid #43684f;
 }
 
 .nextButton {
@@ -55,6 +105,10 @@ body {
   border: none;
 }
 
+.nextButton:active {
+  background-color: #43684f;
+}
+
 .openContainer {
   display: flex;
   flex-direction: column;
@@ -62,6 +116,12 @@ body {
 }
 
 .typeContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.buttonContainer {
   display: flex;
   flex-direction: row;
   gap: 20px;
