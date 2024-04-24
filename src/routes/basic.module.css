@@ -126,3 +126,52 @@ body {
   flex-direction: row;
   gap: 20px;
 }
+
+.topcontainer {
+  width: 100vw;
+  height: 20vh;
+  background-color: #bbcdbf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.bottomcontainer {
+  width: 100vw;
+  height: 80vh;
+  background-color: #bbcdbf;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.plantext {
+  width: 800px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.userplan {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.choosebox {
+  gap: 0px;
+}
+
+.leftcontainer,
+.rightcontainer {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column; /* 요소들을 가로로 배열합니다. */
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+  padding-bottom: 10%;
+}
