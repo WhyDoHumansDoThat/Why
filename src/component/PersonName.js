@@ -1,6 +1,9 @@
 import style from "../routes/basic.module.css";
+import { useNavigate } from "react-router-dom";
+
 
 function PersonName(props) {
+  const navigate = useNavigate();
   
   return (
     <div className={style.container}>
@@ -11,7 +14,9 @@ function PersonName(props) {
       <input className={style.inputName} type="password" placeholder="비밀번호" />
       {/* input type에서 password와 number를 동시에 쓸 수는 없을까...하 */}
       {/* 있겠지 근데 개번거롭겠지 ㅡㅇㅎ마ㅣ힁;ㄹ */}
-      <button className={style.nextButton}>
+      <button className={style.nextButton}  onClick ={() => { 
+          navigate("/choose"); 
+          }}>
         →
       </button>
     </div>

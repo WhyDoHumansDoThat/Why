@@ -10,7 +10,42 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
+}
+
+.progressbar {
+  width: 500px;
+  height: 20px;
+  background-color: #cbd9ce;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+.step1 {
+  width: 33%;
+  height: 20px;
+  background-color: #43684f;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+}
+
+.step2 {
+  width: 66%;
+  height: 20px;
+  background-color: #43684f;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+}
+
+.step3 {
+  width: 100%;
+  height: 20px;
+  background-color: #43684f;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
 }
 
 .text {
@@ -30,13 +65,24 @@ body {
 }
 
 .inputName {
-  font-size: 50px;
+  height: 50px;
+  font-size: 35px;
+  padding: 5px;
+}
+
+.inputName:focus {
+  outline: none;
+  border: 2px solid #43684f;
 }
 
 .inputOpen {
   font-size: 23px;
   height: 80px;
   font-weight: bold;
+}
+
+.inputOpen:focus {
+  border: 2px solid #43684f;
 }
 
 .inputType {
@@ -46,6 +92,10 @@ body {
   font-weight: bold;
 }
 
+.inputType:focus {
+  border: 2px solid #43684f;
+}
+
 .nextButton {
   width: 180px;
   height: 60px;
@@ -53,6 +103,10 @@ body {
   background-color: #679f79;
   border-radius: 30px;
   border: none;
+}
+
+.nextButton:active {
+  background-color: #43684f;
 }
 
 .openContainer {
@@ -65,4 +119,59 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.topcontainer {
+  width: 100vw;
+  height: 20vh;
+  background-color: #bbcdbf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.bottomcontainer {
+  width: 100vw;
+  height: 80vh;
+  background-color: #bbcdbf;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.plantext {
+  width: 800px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.userplan {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.choosebox {
+  gap: 0px;
+}
+
+.leftcontainer,
+.rightcontainer {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column; /* 요소들을 가로로 배열합니다. */
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+  padding-bottom: 10%;
 }
