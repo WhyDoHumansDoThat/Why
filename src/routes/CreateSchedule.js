@@ -2,6 +2,7 @@ import ScheduleName from "../component/ScheduleName";
 import ScheduleOpen from "../component/ScheduleOpen";
 import ScheduleType from "../component/ScheduleType";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function CreateSchedule() {
   const [progress, setProgress] = useState(0);
@@ -12,6 +13,7 @@ function CreateSchedule() {
   });
 
   const [done, setDone] = useState(false);
+  const navigate = useNavigate();
 
   const updateName = (name) => {
     setSchedule({ ...schedule, name: name });
@@ -35,6 +37,7 @@ function CreateSchedule() {
 
   const doneCreate = () => {
     setDone(true);
+    navigate("/participate");
   };
 
   return done ? (

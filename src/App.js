@@ -8,7 +8,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<CreateSchedule />}></Route>
-        <Route path="/:id" element={<ParticipateSchedule />}></Route>
+        <Route path="/participate" element={<ParticipateSchedule />}></Route>
         <Route path="/choose" element={<ChooseSchedule />}></Route>
       </Routes>
     </Router>
