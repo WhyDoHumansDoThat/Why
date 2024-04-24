@@ -1,7 +1,9 @@
+import PersonName from "../component/PersonName";
+
 function ParticipateSchedule() {
   return (
     <div>
-      <div>일정참가</div>
+      <PersonName />
     </div>
   );
 }
