@@ -2,15 +2,19 @@ import style from "../routes/basic.module.css";
 import { useState } from "react";
 
 function ScheduleName({ nextStep, updateName }) {
-  const [name, setName] = useState("");
+  const [name, setName] = useState();
 
   const onChangeName = (e) => {
     setName(e.target.value);
   };
 
   const onSubmit = () => {
-    updateName(name);
-    nextStep();
+    if (name === undefined) {
+      alert("일정 이름 작성은 필수입니다.");
+    } else {
+      updateName(name);
+      nextStep();
+    }
   };
 
   const onKeyDown = (e) => {

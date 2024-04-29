@@ -1,25 +1,33 @@
 import style from "../routes/basic.module.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function PersonName({ onChange }) {
+  const [name, setName] = useState();
+  const [pw, setPw] = useState();
   const navigate = useNavigate();
-  let name = "";
-  let pw = "";
 
   const onChangeName = (e) => {
-    name = e.target.value;
-    console.log(name);
+    setName(e.target.value);
   };
 
   const onChangePW = (e) => {
-    pw = e.target.value;
-    console.log(pw);
+    setPw(e.target.value);
   };
 
   const onSubmit = () => {
-    onChange(name, pw);
-    navigate("/choose");
-    console.log(name, pw);
+    if (name === undefined || pw === undefined) {
+      alert("어쩌구");
+    } else {
+      onChange(name, pw);
+      navigate("/choose");
+    }
+  };
+
+  const onKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      onSubmit();
+    }
   };
 
   return (
@@ -38,10 +46,15 @@ function PersonName({ onChange }) {
         type="password"
         placeholder="비밀번호"
         onChange={onChangePW}
+        onKeyDown={onKeyDown}
       />
       {/* input type에서 password와 number를 동시에 쓸 수는 없을까...하 */}
       {/* 있겠지 근데 개번거롭겠지 ㅡㅇㅎ마ㅣ힁;ㄹ */}
-      <button className={style.nextButton} onClick={onSubmit}>
+      <button
+        className={style.nextButton}
+        onClick={onSubmit}
+        onKeyDown={onKeyDown}
+      >
         →
       </button>
     </div>

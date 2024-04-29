@@ -7,9 +7,10 @@ import { useNavigate } from "react-router-dom";
 function CreateSchedule() {
   const [progress, setProgress] = useState(0);
   const [schedule, setSchedule] = useState({
-    name: "미설정",
-    open: true,
-    type: "미설정",
+    name: undefined,
+    open: undefined,
+    type: undefined,
+    date: undefined,
   });
 
   const [done, setDone] = useState(false);
@@ -25,6 +26,10 @@ function CreateSchedule() {
 
   const updateType = (type) => {
     setSchedule({ ...schedule, type: type });
+  };
+
+  const updateDate = (date) => {
+    setSchedule({ ...schedule, date: date });
   };
 
   const nextProgress = () => {
@@ -59,6 +64,7 @@ function CreateSchedule() {
       ) : (
         <ScheduleType
           updateType={updateType}
+          updateDate={updateDate}
           nextStep={doneCreate}
           prevStep={prevStep}
         />

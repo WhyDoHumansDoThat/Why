@@ -3,8 +3,8 @@ import { useState } from "react";
 
 function ParticipateSchedule() {
   const [person, setPerson] = useState({
-    name: "",
-    password: "",
+    name: undefined,
+    password: undefined,
   });
 
   const createPerson = (name, pw) => {

@@ -1,6 +1,6 @@
 import styles from "./Week.module.css";
 
-function Week({ date, setDate }) {
+function Week({ date, setDate, onKeyDown }) {
   const week = ["일", "월", "화", "수", "목", "금", "토"];
 
   const onClick = (e) => {
@@ -33,6 +33,7 @@ function Week({ date, setDate }) {
               onClick={onClick}
               value={v}
               style={style}
+              onKeyDown={onKeyDown}
             ></button>
           </div>
         );

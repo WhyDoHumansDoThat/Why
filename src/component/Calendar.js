@@ -15,7 +15,7 @@ import {
 import { useState, useCallback, useMemo } from "react";
 import styles from "./Calendar.module.css";
 
-function Calendar({ date, setDate }) {
+function Calendar({ date, setDate, onKeyDown }) {
   const [currentDate, setCurrentDate] = useState(new Date());
 
   const monthStart = startOfMonth(currentDate);
@@ -122,6 +122,7 @@ function Calendar({ date, setDate }) {
               style={style}
               onClick={onClick}
               value={v}
+              onKeyDown={onKeyDown}
             >
               {format(v, "d")}
             </button>
